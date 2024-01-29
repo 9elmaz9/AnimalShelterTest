@@ -1,0 +1,24 @@
+@startuml
+
+left to right direction
+
+rectangle acrtors{
+:user:
+}
+
+rectangle  {
+(hello) as first
+(my) as second
+(name) as three
+(is) as four
+ (Elmaz) as five
+ }
+
+user ---> first
+ user ---> second
+ user ---> three
+ user ---> four
+ user ---> five
+
+ @enduml
+

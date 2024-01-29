@@ -1,0 +1,6 @@
+@startuml
+
+user -> AnimalShelterApp : inputs name or age
+AnimalShelterApp ->AnimalService : sortAnimalShelter(SortType : sortType)
+
+@enduml

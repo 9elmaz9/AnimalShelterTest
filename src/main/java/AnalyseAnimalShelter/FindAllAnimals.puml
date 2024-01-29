@@ -1,0 +1,26 @@
+@startuml
+
+start
+:User provides find method;
+if (Sorting by name?) then (yes)
+  :System retrieves the animals;
+  :System sorts animals by name;
+else (no)
+  endif
+
+if (Sorting by age?) then (yes)
+  :System retrieves the animals;
+  :System sorts animals by age;
+else (no)
+  endif
+
+if (Sorting by id?) then (yes)
+  :System retrieves the animals;
+  :System sorts animals by id;
+else (no)
+  :Error: can only sort by age, name, or id;
+endif
+
+stop
+
+@enduml

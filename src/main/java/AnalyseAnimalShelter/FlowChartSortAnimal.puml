@@ -1,0 +1,26 @@
+@startuml
+
+start
+
+repeat
+:user provides sorting methode by name or age;
+
+
+
+repeat while  (user choosing a valid sorting method)is (no)
+
+if(sorting by name)then(yes)
+:system retrieves the animals;
+:system sort the animal;
+end;
+
+else (no , sort by age)
+:system retrieves the animals;
+:system sort the animal by age;
+end;
+
+
+
+@enduml
+
+
