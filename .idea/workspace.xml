@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="537ceda4-4507-457e-8b55-3e7c6fa01063" name="Changes" comment="Initial commit" />
+    <list default="true" id="537ceda4-4507-457e-8b55-3e7c6fa01063" name="Changes" comment="add">
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/Example.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/Example.puml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +139,28 @@
       <option name="project" value="LOCAL" />
       <updated>1706625197764</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit">
+      <created>1706625485724</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706625485725</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial commit">
+      <created>1706625567117</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706625567117</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add">
+      <created>1706625714091</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706625714091</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
 </project>
