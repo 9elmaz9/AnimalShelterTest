@@ -1,0 +1,16 @@
+@startuml
+
+start
+:User provides name for search;
+:AnimalShelterApp calls findAnimalByName(name);
+:AnimalService calls AnimalRepository findAnimalByName(name);
+
+if (AnimalRepository returns Animal) then (Animal found)
+    :AnimalShelterApp receives Animal details;
+else (Animal not found)
+    :AnimalShelterApp receives Not Found message;
+endif
+
+stop
+
+@enduml

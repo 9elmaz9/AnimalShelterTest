@@ -1,0 +1,38 @@
+@startuml
+User -> AnimalShelterApp : provides animal ID or name
+AnimalShelterApp -> AnimalService : treatAnimal(identifier: String)
+AnimalService -> AnimalRepository : findAnimalByIdentifier(identifier: String)
+AnimalService <-- AnimalRepository : Animal
+AnimalService -> Animal : treatAnimal()
+AnimalShelterApp <-- AnimalService : void
+User <-- AnimalShelterApp : OK message
+@enduml
+
+
+
+
+
+
+
+
+
+
+
+
+@startuml
+
+User -> AnimalShelterApp : provides animal ID or name
+AnimalShelterApp -> AnimalService : treatAnimal(identifier: String)
+AnimalService -> AnimalRepository : findAnimalByIdentifier(identifier: String)
+AnimalService <-- AnimalRepository : Animal
+
+alt Animal found
+    AnimalService -> Animal : treatAnimal()
+    AnimalShelterApp <-- AnimalService : void
+    User <-- AnimalShelterApp : OK message
+else Animal not found
+    AnimalShelterApp <-- AnimalService : Error message: Animal not found
+    User <-- AnimalShelterApp : Error message
+end
+
+@enduml

@@ -1,0 +1,22 @@
+@startgantt
+language uk
+Project starts 2024.02.05
+saturday are closed
+sunday are closed
+2024.02.29
+is
+opened
+[000] lasts 17 days
+[000] pauses
+on
+2024.03.19
+[000] pauses
+on
+2024.03.20
+[000] pauses
+on
+monday
+[000] starts at [000]'s
+end
+and lasts 2 weeks
+@endgantt

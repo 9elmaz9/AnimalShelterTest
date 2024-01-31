@@ -1,0 +1,15 @@
+@startuml
+
+User -> AnimalShelterApp : provides animal details
+AnimalShelterApp -> AnimalService : addAnimal(Animal: animal)
+AnimalService -> AnimalRepository : saveAnimal(Animal: animal)
+AnimalService <-- AnimalRepository : Animal
+
+alt Animal already in the shelter
+    AnimalShelterApp <-- AnimalService : Error message: Animal already exists
+else Animal added successfully
+    AnimalShelterApp <-- AnimalService : void
+    User <-- AnimalShelterApp : OK message
+end
+
+@enduml

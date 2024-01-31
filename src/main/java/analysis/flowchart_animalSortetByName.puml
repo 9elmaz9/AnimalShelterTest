@@ -1,0 +1,18 @@
+@startuml
+
+start
+:User requests all animals sorted by name;
+:AnimalShelterApp calls getAllAnimalsSortedByName();
+:AnimalService calls AnimalRepository getAnimals();
+:AnimalService receives List<Animal> from AnimalRepository;
+:AnimalService sortsAnimalsByName(List<Animal>);
+:AnimalShelterApp receives List of animals sorted by name from AnimalService;
+stop
+
+@enduml
+
+
+
+
+
+
