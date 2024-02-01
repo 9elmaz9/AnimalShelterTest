@@ -6,5 +6,6 @@ AnimalService -> AnimalRepository : getAnimals()
 AnimalService <-- AnimalRepository : List<Animal>
 AnimalService -> AnimalService : sortAnimalsByName(List<Animal>)
 AnimalShelterApp <-- AnimalService : List of animals sorted by name
+User <-- AnimalShelterApp : Animal details or Not Found message
 
 @enduml

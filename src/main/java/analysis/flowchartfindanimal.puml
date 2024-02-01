@@ -24,11 +24,13 @@ else (no, uses id)
     if (is the animal found) then (yes)
         :return the found animal;
         stop;
-    else (no)
+    else (no , uses age)
+    :system retrieves animal by age;
         :error no animals found;
         end;
     endif
-endif
+
+
 
 
 @enduml

@@ -1,12 +1,68 @@
+
 @startuml
-User -> AnimalShelterApp : provides animal ID or name
-AnimalShelterApp -> AnimalService : treatAnimal(identifier: String)
-AnimalService -> AnimalRepository : findAnimalByIdentifier(identifier: String)
-AnimalService <-- AnimalRepository : Animal
-AnimalService -> Animal : findAnimalByIdentifierAnimal()
+
+User -> AnimalShelterApp : inputs name or age
+AnimalShelterApp -> AnimalService : findAnimalShelter(Finding by age?)((Finding by ID?)((Finding by name?)
+AnimalService -> AnimalRepository : getAnimals()
+AnimalService <-- AnimalRepository : List<Animal>
+
+alt Sorting by name
+AnimalService -> AnimalService : findAnimalsByName(List<Animal>)
+
+else Sorting by age
+AnimalService -> AnimalService : findAnimalsByAge(List<Animal>)
+
+end
+
 AnimalShelterApp <-- AnimalService : void
 User <-- AnimalShelterApp : OK message
+
 @enduml
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@startuml
+
+User -> AnimalShelterApp : provides animal ID, name, or age
+AnimalShelterApp -> AnimalService : findAnimal(identifier: String)
+if (Finding by ID?) then (yes)
+  AnimalService -> AnimalRepository : findAnimalByIdentifier(identifier: String)
+  AnimalService <-- AnimalRepository : Animal
+  AnimalService -> Animal : findAnimalByIdentifierAnimal()
+else (no)
+  if (Finding by name?) then (yes)
+    AnimalService -> AnimalRepository : findAnimalByName(identifier: String)
+    AnimalService <-- AnimalRepository : Animal
+    AnimalService -> Animal : findAnimalByNameAnimal()
+  else (no)
+    if (Finding by age?) then (yes)
+      AnimalService -> AnimalRepository : findAnimalByAge(identifier: String)
+      AnimalService <-- AnimalRepository : Animal
+      AnimalService -> Animal : findAnimalByAgeAnimal()
+    else (no)
+      :Error: can only find by ID, name, or age;
+    endif
+  endif
+endif
+AnimalShelterApp <-- AnimalService : Animal
+User <-- AnimalShelterApp : Display animal information
+
+@enduml
 
 

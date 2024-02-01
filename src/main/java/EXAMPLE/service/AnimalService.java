@@ -14,6 +14,8 @@ public class AnimalService {
         this.animalRepository = animalRepository;
     }
 
+
+    //sort
     public void sortAnimalShelter(SortType sortType){
         List<Animal> animalList = animalRepository.getAnimals();
 
@@ -32,4 +34,25 @@ public class AnimalService {
     public void sortAnimalsByAge(List<Animal> animalList){
         animalList.sort(Comparator.comparing(Animal::getAge));
     }
+
+
+    //add
+    public void addAnimal(List<String >  animalList){
+        animalList.add(1,"Bob");
+        if(animalList.isEmpty())
+            System.out.println("error");
+    }
+
+
+
+    //return
+
+    public List<Animal> returnAllAnimals(){
+        return animalRepository.getAnimals();
+
+
+    }
+
+
+
 }

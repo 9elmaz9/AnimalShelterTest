@@ -1,0 +1,18 @@
+@startum
+
+
+start
+:User provides returen all animals;
+:system retrieves the animals;
+:system get all animals;
+:system return all animals;
+stop
+
+@enduml
+
+
+
+
+
+get : return
+

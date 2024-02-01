@@ -18,4 +18,5 @@ public class AnimalRepository {
     public List<Animal> getAnimals() {
         return shelterAnimals;
     }
+
 }

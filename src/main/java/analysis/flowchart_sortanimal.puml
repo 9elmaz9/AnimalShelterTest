@@ -1,31 +1,10 @@
+
+
 @startuml
-
-User -> AnimalShelterApp : inputs name or age
-
-AnimalShelterApp -> AnimalService : sortAnimalShelter(SortType: sortType)
-AnimalService -> AnimalRepository : getAnimals()
-AnimalService <-- AnimalRepository : List<Animal>
-
-alt Sorting by name
-    AnimalService -> AnimalService : sortAnimalsByName(List<Animal>)
-else Sorting by age
-    AnimalService -> AnimalService : sortAnimalsByAge(List<Animal>)
-end
-
-AnimalShelterApp <-- AnimalService : void
-User <-- AnimalShelterApp : OK message
-
-
-
 start
-
-User -> AnimalShelterApp : provides sorting method by name or age
-AnimalShelterApp : system retrieves the animals
-
-if (sorting by name) then (yes)
-    AnimalShelterApp : system sorts the animals by name
-    stop
-else (no, sort by age)
-    AnimalShelterApp : system sorts the animals by age
-    stop
+:user selects sorting criteria;
+:system retrieves the animals;
+:system sorts the animals based on the criteria;
+:system return the sorted animals;
+stop
 @enduml

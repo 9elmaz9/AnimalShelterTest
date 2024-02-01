@@ -5,27 +5,11 @@
 User -> AnimalShelterApp : provides name for search
 AnimalShelterApp -> AnimalService : findAnimalByName(name)
 AnimalService -> AnimalRepository : findAnimalByName(name)
-AnimalService <-- AnimalRepository : Animal
+AnimalService <-- AnimalRepository :List< Animal>
 AnimalShelterApp <-- AnimalService : Animal details or Not Found message
-@enduml
-
-
-
-
-
-@startuml
-
-User -> AnimalShelterApp : provides name for search
-AnimalShelterApp -> AnimalService : findAnimalByName(name)
-AnimalService -> AnimalRepository : findAnimalByName(name)
-AnimalService <-- AnimalRepository : Animal
-
-alt Animal found
-    AnimalShelterApp <-- AnimalService : Animal details
-else Animal not found
-    AnimalShelterApp <-- AnimalService : Not Found message
+alt found  yes- return message
+else  no
 end
-
 @enduml
 
 
@@ -33,14 +17,11 @@ end
 
 
 
-@startuml
 
-User -> AnimalShelterApp : requests all animals sorted by name
-AnimalShelterApp -> AnimalService : getAllAnimalsSortedByName()
-AnimalService -> AnimalRepository : getAnimals()
-AnimalService <-- AnimalRepository : List<Animal>
-AnimalService -> AnimalService : sortAnimalsByName(List<Animal>)
-AnimalShelterApp <-- AnimalService : List of animals sorted by name
-@enduml
+
+
+
+
+
 
 

@@ -1,0 +1,11 @@
+@startuml
+
+User -> AnimalShelterApp: input List<Animal>
+AnimalShelterApp -> AnimalService : getAllanimals
+AnimalShelterApp <-- AnimalService : List<Animal>
+
+AnimalShelterApp -> AnimalRepository : returnAllAnimaml
+
+AnimalShelterApp <-- AnimalRepository : return all animals
+User <-- AnimalShelterApp : ok message  or Not Found message
+@enduml

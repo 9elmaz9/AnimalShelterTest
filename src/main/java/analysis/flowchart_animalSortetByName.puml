@@ -1,17 +1,18 @@
 @startuml
 
 start
-:User requests all animals sorted by name;
-:AnimalShelterApp calls getAllAnimalsSortedByName();
-:AnimalService calls AnimalRepository getAnimals();
-:AnimalService receives List<Animal> from AnimalRepository;
-:AnimalService sortsAnimalsByName(List<Animal>);
-:AnimalShelterApp receives List of animals sorted by name from AnimalService;
+:User retries all animals sorted by name;
+:system retrieves the animals;
+:system get all animals
+:system sorts the animals  by name;
+:system return the sorted animals;
+
 stop
 
 @enduml
 
 
+get : sort : return
 
 
 

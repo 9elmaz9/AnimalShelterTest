@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="537ceda4-4507-457e-8b55-3e7c6fa01063" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchart_animalSortetByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchart_findanimalByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchart_retun.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_addanimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_find_an_animal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_findanimalByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_return.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_trearanimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/sequense_sortedByName.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchart_retunAllAnimals.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_returnAllanimals.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EXAMPLE/repository/AnimalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EXAMPLE/repository/AnimalRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EXAMPLE/service/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EXAMPLE/service/AnimalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/flowchart_animalSortetByName.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchart_animalSortetByName.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/flowchart_findanimalByName.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchart_findanimalByName.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/flowchart_retun.puml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analysis/flowchart_sortanimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchart_sortanimal.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/flowchartfinfanimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchartfindanimal.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/sequence_sortanimals.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_sortanimals.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/flowchartfindanimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/flowchartfindanimal.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/sequence_addanimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_addanimal.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/sequence_find_an_animal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_find_an_animal.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/sequence_findanimalByName.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/sequence_findanimalByName.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/sequence_return.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/sequense_sortedByName.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/sequense_sortedByName.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +57,13 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/UseCaseDiagram.puml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/AnalyseAnimalShelter/seauence_flowChart.puml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/analysis/flowchart_findanimalByName.puml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/analysis/flowchart_retunAllAnimals.puml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/analysis/flowchart_sortanimal.puml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/analysis/flowchartfindanimal.puml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/analysis/sequence_addanimal.puml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/analysis/sequence_find_an_animal.puml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/analysis/sequence_findanimalByName.puml" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/analysis/sequence_return.puml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/analysis/sequence_returnAllanimals.puml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/analysis/sequence_sortanimals.puml" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -109,19 +113,6 @@
       <option name="PACKAGE_NAME" value="intecbrussel.be" />
       <option name="MAIN_CLASS_NAME" value="intecbrussel.be.AnimalShelterTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="AnimalShelterTest2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="AnimalShelterTest2" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706626132642</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add">
+      <created>1706710454975</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706710454976</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
